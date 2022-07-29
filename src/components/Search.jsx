@@ -22,13 +22,12 @@ function Search(props) {
 const onQuickChangeHandler = (e)=>{
   const query = e.target.value;
   props.setInput(query);
+  props.setSearchParams(createSearchParams({ q: query }));
   optimisedOnChangeHandler(query);
 }
 
   const onChangeHandler = async (query) => {
-    // const query = e.target.value;
-    // props.setInput(query);
-    props.setSearchParams(createSearchParams({ q: query }));
+   
     async function fetchusers(query) {
       try {
         let users = await fetch(

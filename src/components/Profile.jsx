@@ -59,22 +59,22 @@ export default function Profile(props) {
 
         <div className={styles.links}>
           <div className={styles.set1}>
-            <a className={styles.location}>
+            <a className={styles.location} style={{color: !!user.location?"white":"grey"}} >
               <img className={styles.linkimg} src={location} alt="" />
-              {user.location ?? "No location"}
+              {!!user.location?user.location: "No location"}
             </a>
-            <a className={styles.blog}>
+            <a className={styles.blog} style={{color: !!user.blog?"white":"grey"}}>
               <img className={styles.linkimg} src={link} alt="" />
-              {user.blog ?? "No Blog"}
+              {!!user.blog?user.blog: "No Blog"}
             </a>
           </div>
 
           <div className={styles.set2}>
-            <a className={styles.Twitter}>
+            <a className={styles.Twitter} style={{color: !!user.twitter_username?"white":"grey"}}>
               <img className={styles.linkimg} src={twitter} alt="" />
-              {user.twitter_username ?? "Not Available"}
+              {!!user.twitter_username?user.twitter_username: "Not Available"}
             </a>
-            <a className={styles.github}>
+            <a className={styles.github} style={{color: !!user.github?"white":"grey"}}>
               <img className={styles.linkimg} src={company} alt="" />
               @github
             </a>
