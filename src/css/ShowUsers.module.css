@@ -1,0 +1,32 @@
+.userslist{
+    width:48%;
+    height:140px;
+    background-color: rgba(0, 255, 102, 0.5);
+    background:linear-gradient(#1f2a48,#0c1329);
+    margin:auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.userslist ul{
+    list-style: none;
+    padding-left:10px;
+}
+
+
+.userslist ul li,button{
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.userslist ul li button{
+    color:rgba(245, 245, 245, 0.5);
+    border:none;
+    background: none;
+    outline:none;
+}
+
+.userslist ul li button:hover{
+    color:rgba(245, 245, 245, 1);
+}
+

@@ -1,0 +1,52 @@
+.searchcontainer {
+  width: 50%;
+  min-width: 400px;
+  height: 50px;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  padding: 0px 20px;
+  padding-right: 10px;
+  background-color: #1f2a48;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searchimg {
+  cursor: pointer;
+  width: 5%;
+  height: 20px;
+}
+.searchimg img {
+  height: 100%;
+}
+
+form {
+  width: 95%;
+  margin-left: 5px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+form button {
+  height: 40px;
+  width: 80px;
+  background-color: rgba(0, 123, 255, 0.838);
+  border: none;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+}
